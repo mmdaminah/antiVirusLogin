@@ -1,3 +1,7 @@
+@font-face {
+    font-family: vazir;
+    src: url(./Vazir.ttf);
+}
 html, body {
     width: 100%;
     height: 100%;
@@ -6,4 +10,128 @@ html, body {
 }
 * {
     box-sizing: border-box;
+    font-family: vazir;
+}
+.container { 
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.animation {
+    width: 55%;
+    height: 100%;
+    background: linear-gradient(45deg, rgb(8, 212, 248) 0%, rgb(22, 216, 184) 80%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: bubble 4s infinite;
+    transform-origin: center center;
+}
+@keyframes bubble{
+    from {
+        background-color: tomato;
+    }
+    to {
+        background-color: rgb(71, 181, 255);
+    }
+}
+.animation a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+.animation img {
+    width: 100px;
+    height: 100px;
+}
+.animation div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.login {
+    width: 45%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.button {
+    width: 80%;
+    height: 25%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.button a {
+    text-decoration: none;
+    color: rgb(51, 51, 228);
+}
+.header {
+    display: flex;
+    flex-direction: column;
+}
+.header h1{
+    text-align: right;
+}
+.header p {
+    color: gray;
+}
+.input {
+    width: 80%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.input-text { 
+    width: 100%;
+    text-align: right;
+}
+.input-text input{
+    width: 90%;
+    height: 35px;
+    border: none;
+    outline: none;
+    border-bottom:1px solid gray;
+}
+.input-text input::placeholder{
+    text-align: right;
+}
+.input-text i{
+    position: relative;
+    left: 20px;
+    color: gray;
+}
+.input-capcha {
+    width: 90%;
+    text-align: right;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.input-capcha input{
+    width: 60%;
+    height: 35px;
+    border: none;
+    outline: none;
+    border-bottom:1px solid gray;
+}
+.input-capcha input::placeholder{
+    text-align: right;
+}
+.input input[type="button"] {
+    width: 90%;
+    height: 35px;
+    background-color: rgb(12, 134, 248);
+    cursor: pointer;
+    border: none;
+    color: white;
+}
+.options label {
+    font-size: small;
 }
